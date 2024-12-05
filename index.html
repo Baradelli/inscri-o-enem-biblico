@@ -198,19 +198,7 @@
           var whatsappNumber = "5511994249800";
 
           // Determina a URL do WhatsApp com base no tamanho da tela
-          var url = "";
-          if (window.innerWidth <= 768) {
-            // Para dispositivos móveis
-            url =
-              "whatsapp://send?phone=" + whatsappNumber + "&text=" + message;
-          } else {
-            // Para desktop
-            url =
-              "https://web.whatsapp.com/send?phone=" +
-              whatsappNumber +
-              "&text=" +
-              message;
-          }
+          const url = "https://chat.whatsapp.com/JmrK6RMHtp4LkZgUnXfwpG";
 
           // Abre o link do WhatsApp
           window.open(url, "_blank");
